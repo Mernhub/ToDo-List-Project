@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+width: 100%;
+min-height: 100vh;
+background: linear-gradient(135deg, rgba(0, 255, 0, 0.411), #1738cc);
+padding: 20px;
+}
+.todo{
+    background-color: white;
+    display: flex;
+    margin: 100px 500px;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 40px 30px 70px;
+}
+h2{
+   margin-left: 10px;
+   color: cyan;
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: #edeef0 ;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: chartreuse;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 20px;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: larger;
+    margin-bottom: 20px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+}
+li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/pictures/unchecked-10-32.png);
+    background-size: cover;
+    background-position: center;
+    top: 9px;
+    left: 8px;
+}
+.checked{
+    color: silver;
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url(/pictures/Green-check-mark-icon-on-transparent-background-PNG.png);
+}
+ul li span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 0;
+    top: 5px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: silver;
+    color: white;
+}
